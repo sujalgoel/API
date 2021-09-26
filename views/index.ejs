@@ -1,0 +1,69 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+		<title>API | Sujal Goel</title>
+
+		<meta name="theme-color" content="#5865F2" />
+		<meta
+			property="og:image"
+			content="https://cdn.discordapp.com/attachments/861640837170200576/875761208056246304/logo.gif"
+		/>
+		<meta property="og:url" content="https://api.sujalgoel.engineer" />
+		<meta property="og:site_name" content="API | Sujal Goel" />
+		<meta property="og:title" content="API | Sujal Goel" />
+		<meta property="og:description" content="An API by Sujal Goel." />
+
+		<meta property="twitter:card" content="summary" />
+		<meta property="twitter:url" content="https://api.sujalgoel.engineer" />
+		<meta property="twitter:title" content="API | Sujal Goel" />
+		<meta property="twitter:description" content="An API by Sujal Goel." />
+		<meta
+			property="twitter:image"
+			content="https://cdn.discordapp.com/attachments/861640837170200576/875761208056246304/logo.gif"
+		/>
+
+		<link
+			rel="shortcut icon"
+			href="https://api.sujalgoel.engineer/favicon.png"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+
+	<body>
+		<form class="json complex-keys">
+			<fieldset class="json__object">
+				<label class="json__pair">
+					<span class="json__key">success</span>
+					<input class="json__value--string" value="true" readonly />,
+				</label>
+				<fieldset class="json__array">
+					<legend class="json__key--nested">endpoints</legend>
+					<input
+						class="json__value--string"
+						onClick="window.location.href='<%= baseURI %>/login'"
+						value="/login"
+					/>
+				</fieldset>
+				<label class="json__pair">
+					<span class="json__key">creator</span>
+					<input
+						class="json__value--string"
+						value="Sujal Goel <https://github.com/sujalgoel>"
+						readonly
+					/>,
+				</label>
+			</fieldset>
+		</form>
+		<script src="./script.js"></script>
+	</body>
+</html>

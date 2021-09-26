@@ -1,0 +1,32 @@
+{
+  "name": "api-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nodemon index.js"
+  },
+	"homepage": "https://github.com/sujalgoel/api#readme",
+	"license": "CC BY-NC-ND 4.0",
+	"bugs": {
+		"url": "https://github.com/sujalgoel/api/issues"
+	},
+  "author": "Sujal Goel <https://github.com/sujalgoel>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sujalgoel/api.git"
+	},
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.7",
+    "passport": "^0.5.0",
+    "passport-discord": "^0.1.4",
+    "reddit.images": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}

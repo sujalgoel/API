@@ -1,0 +1,9 @@
+{
+	"clientID": "",
+	"clientSecret": "",
+	"callbackURL": "/redirect",
+	"port": 3000,
+	"mongoURI": "mongodb://localhost:27017/SUJAL_API",
+	"baseURI": "http://localhost:3000",
+	"secret": ""
+}

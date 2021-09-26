@@ -1,0 +1,120 @@
+html,
+body {
+    background: #2b303b;
+    color: #c0c5ce;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    color: #2b303b;
+    background: #a3be8c;
+}
+
+.json {
+    padding: 1.25em;
+    background: #2b303b;
+    color: #c0c5ce;
+}
+
+.json *,
+.json :focus {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    font: 400 1em/1.5 "Source Code Pro", monospace;
+}
+
+.json__pair {
+    display: block;
+}
+
+.json__key,
+.json__key--nested {
+    margin-right: 0.625em;
+    color: #bf616a;
+}
+
+.json__key:after,
+.json__key--nested:after {
+    content: ":";
+}
+
+.complex-keys .json__key:before,
+.complex-keys .json__key--nested:before {
+    content: '"';
+}
+
+.complex-keys .json__key:after,
+.complex-keys .json__key--nested:after {
+    content: '":';
+}
+
+.json__key--nested {
+    float: left;
+    margin-left: -1.25em;
+    margin-right: 1.875em;
+}
+
+.json__value--string {
+    background: #2b303b;
+    color: #a3be8c;
+}
+
+.json__value--string:focus {
+    color: #fff;
+}
+
+.json__value--string:before {
+    content: '"';
+}
+
+.json__value--string:after {
+    content: '"';
+}
+
+.json__object {
+    padding-left: 1.25em;
+}
+
+.json__object:before,
+.json__object:after {
+    margin-left: -1.25em;
+}
+
+.json__object:before {
+    content: "{";
+}
+
+.json__object:after {
+    content: "}";
+}
+
+.json__array {
+    padding-left: 1.25em;
+}
+
+.json__array:before,
+.json__array:after {
+    margin-left: -1.25em;
+}
+
+.json__array:before {
+    content: "[";
+}
+
+.json__array:after {
+    content: "],";
+}
+
+.json__array>.json__value,
+.json__array>.json__value--string {
+    display: block;
+}
